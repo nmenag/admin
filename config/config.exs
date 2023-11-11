@@ -76,8 +76,10 @@ config :kaffy,
   # since v0.10.0
   enable_context_dashboards: true,
   # since v0.10.0
-  admin_footer: "Kaffy &copy; 2023"
-
+  admin_footer: "Kaffy &copy; 2023",
+  extensions: [
+    Admin.Kaffy.Extension
+  ]
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{config_env()}.exs"
