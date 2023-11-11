@@ -8,9 +8,26 @@ defmodule Admin.Blog.PostAdmin do
 
   def custom_links(_schema) do
     [
-      %{name: "Source Code", url: "https://example.com/repo/issues", order: 2, location: :top, full_icon: "paperclip"},
-      %{name: "Products On Site", url: "https://example.com/products", location: :sub, target: "_blank"},
-      %{name: "Support us", url: "https://example.com/products", location: :bottom, target: "_blank",  full_icon: "usd"},
+      %{
+        name: "Source Code",
+        url: "https://example.com/repo/issues",
+        order: 2,
+        location: :top,
+        full_icon: "paperclip"
+      },
+      %{
+        name: "Products On Site",
+        url: "https://example.com/products",
+        location: :sub,
+        target: "_blank"
+      },
+      %{
+        name: "Support us",
+        url: "https://example.com/products",
+        location: :bottom,
+        target: "_blank",
+        full_icon: "usd"
+      }
     ]
   end
 

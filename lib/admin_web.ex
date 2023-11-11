@@ -19,7 +19,6 @@ defmodule AdminWeb do
 
   def static_paths, do: ~w(assets fonts images favicon.ico robots.txt)
 
-
   def view do
     quote do
       use Phoenix.View,
@@ -33,7 +32,6 @@ defmodule AdminWeb do
 
       import AdminWeb.ErrorHelpers
       import AdminWeb.Gettext
-
     end
   end
 

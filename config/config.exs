@@ -53,7 +53,6 @@ config :tailwind,
     cd: Path.expand("../assets", __DIR__)
   ]
 
-
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
@@ -64,16 +63,20 @@ config :phoenix, :json_library, Jason
 
 config :kaffy,
   # required keys
-  otp_app: :admin, # required
-  ecto_repo: Admin.Repo, # required
-  router: AdminWeb.Router, # required
+  # required
+  otp_app: :admin,
+  # required
+  ecto_repo: Admin.Repo,
+  # required
+  router: AdminWeb.Router,
   # optional keys
   admin_title: "My Awesome App",
   hide_dashboard: false,
   # home_page: [schema: [:accounts, :user]],
-  enable_context_dashboards: true, # since v0.10.0
-  admin_footer: "Kaffy &copy; 2023" # since v0.10.0
-
+  # since v0.10.0
+  enable_context_dashboards: true,
+  # since v0.10.0
+  admin_footer: "Kaffy &copy; 2023"
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
